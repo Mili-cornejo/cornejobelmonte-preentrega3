@@ -12,24 +12,18 @@ class Producto{
 class BaseDeDatos {
     constructor() {
         //array para el catalogo de productos
-        this.productos = [];
     
-        this.agregarRegistro(1, "Arenero", 5000, "Animal", "arenero.img.jpg");
-        this.agregarRegistro(2, "Chupete", 3000, "Animal", "chupete-goma.img.jpg");
-        this.agregarRegistro(3, "juguete perro", 3000, "Animal", "juguete.img.jpeg");
-        this.agregarRegistro(4, "comida gato", 5000, "Animal", "gato.img.jpg");
-        this.agregarRegistro(5, "comida perro", 6500, "Animal", "comida.perro.png");
-        this.agregarRegistro(6, "comida", 6000, "Animal", "comida.img.jpeg");
-        this.agregarRegistro(7, "juguete", 1500, "Animal", "juguete.img.jpeg");
-        this.agregarRegistro(8, "rascador", 8000, "Animal", "rascador.img.jpeg");
-        this.agregarRegistro(9, "snack", 800, "Animal", "snack.img.jpeg");
-        this.agregarRegistro(10, "juguete gato", 2000, "Animal", "gato.img.jpg");
+        this.productos = [];
+
+       this.cargarRegistros() ;
+    
     }
 
-    agregarRegistro(id, nombre, precio, categoria, imagen) {
-        const producto = new Producto(id, nombre, precio, categoria, imagen);
-        this.productos.push(producto);
-      }
+    async cargarRegistros() {
+      const resultado = await fetch("./json/productos.json");
+      this.productos = await resultado.json();
+      cargarProductos(this.productos);
+    }
 
 
     traerRegistros() {
@@ -137,8 +131,6 @@ class Carrito{
   }
 }
    
-  
-
 
 
  

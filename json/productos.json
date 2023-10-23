@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "nombre": "Arenero",
+        "precio": 5000,
+        "categoria": "Animal",
+        "imagen": "arenero.img.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Chupete",
+        "precio": 3000,
+        "categoria": "Animal",
+        "imagen": "chupete-goma.img.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "juguete perro",
+        "precio": 3000,
+        "categoria": "Animal",
+        "imagen": "juguete.img.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "comida gato",
+        "precio": 5000,
+        "categoria": "Animal",
+        "imagen": "gato.img.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "comida perro",
+        "precio": 6500,
+        "categoria": "Animal",
+        "imagen": "comida.perro.png"
+    },
+    {
+        "id": 6,
+        "nombre": "comida",
+        "precio": 6000,
+        "categoria": "Animal",
+        "imagen": "comida.img.jpeg"
+    },
+    {
+        "id": 7,
+        "nombre": "juguete",
+        "precio": 1500,
+        "categoria": "Animal",
+        "imagen": "juguete.img.jpeg"
+    },
+    {
+        "id": 8,
+        "nombre": "rascador",
+        "precio": 8000,
+        "categoria": "Animal",
+        "imagen": "rascador.img.jpeg"
+    },
+    {
+        "id": 9,
+        "nombre": "snack",
+        "precio": 800,
+        "categoria": "Animal",
+        "imagen": "snack.img.jpeg"
+    },
+    {
+        "id": 10,
+        "nombre": "juguete gato",
+        "precio": 2000,
+        "categoria": "Animal",
+        "imagen": "gato.img.jpg"
+    }
+]
